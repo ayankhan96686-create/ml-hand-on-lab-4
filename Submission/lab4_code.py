@@ -17,6 +17,9 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, fpgrowth, association_rules
 
+# Change directory to script folder so outputs always save inside Submission/
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 # Create folder to save output plots
 os.makedirs("output_graphs", exist_ok=True)
 

@@ -40,18 +40,20 @@ This repository contains the complete implementation for **Hands-on Lab Evaluati
 ```text
 ├── Mall_Customers.csv               # Mall customer dataset
 ├── Groceries_dataset.csv            # Retail transaction dataset
-├── lab4_code.py                     # Clean Python script (runs all 5 tasks)
-├── lab4_clustering_association.ipynb # Jupyter Notebook with visual outputs
-├── association_rules_report.csv     # Generated association rules report
-├── output_graphs/                   # Saved visualization figures
-│   ├── 1_feature_distributions.png
-│   ├── 2_kmeans_elbow_method.png
-│   ├── 3_kmeans_clusters.png
-│   ├── 4_hierarchical_dendrogram.png
-│   ├── 5_hierarchical_clusters.png
-│   ├── 6_dbscan_clusters.png
-│   └── 7_clustering_comparison.png
-└── README.md                        # Documentation & setup guide
+├── README.md                        # Documentation & setup guide
+└── Submission/                      # 📁 All Submission Deliverables
+    ├── lab4_code.py                 # Clean Python source code
+    ├── lab4_clustering_association.ipynb # Jupyter Notebook with visual outputs
+    ├── association_rules_report.csv # Generated association rules report
+    ├── Conclusion.md                # Short Conclusion (150-200 words)
+    └── output_graphs/               # Cluster visualization graphs & screenshots
+        ├── 1_feature_distributions.png
+        ├── 2_kmeans_elbow_method.png
+        ├── 3_kmeans_clusters.png
+        ├── 4_hierarchical_dendrogram.png
+        ├── 5_hierarchical_clusters.png
+        ├── 6_dbscan_clusters.png
+        └── 7_clustering_comparison.png
 ```
 
 ---
@@ -72,13 +74,13 @@ The code and notebook automatically load both datasets directly from your GitHub
 
 ### 3. Run Python Script
 ```bash
-python lab4_code.py
+python Submission/lab4_code.py
 ```
 
-All 7 visualization graphs will be saved into the `output_graphs/` folder, and the mined association rules will be exported to `association_rules_report.csv`.
+All 7 visualization graphs will be saved into the `Submission/output_graphs/` folder, and the mined association rules will be exported to `Submission/association_rules_report.csv`.
 
 ### 4. Or Open the Jupyter Notebook
-Open `lab4_clustering_association.ipynb` in Jupyter Notebook, VS Code, or Google Colab and run all cells sequentially.
+Open `Submission/lab4_clustering_association.ipynb` in Jupyter Notebook, VS Code, or Google Colab and run all cells sequentially.
 
 ---
 
