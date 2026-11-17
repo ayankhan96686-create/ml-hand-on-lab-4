@@ -21,11 +21,18 @@ from mlxtend.frequent_patterns import apriori, fpgrowth, association_rules
 os.makedirs("output_graphs", exist_ok=True)
 
 # --------------------------------------------------
-# Task 1: Load and explore the Mall Customer dataset
+# Task 1: Load and explore the Mall Customer dataset from GitHub
 # --------------------------------------------------
-mall = pd.read_csv("Mall_Customers.csv")
+# Load dataset directly from raw GitHub link
+mall_url = "https://raw.githubusercontent.com/ayankhan96686-create/ml-hand-on-lab-4/main/Mall_Customers.csv"
+try:
+    mall = pd.read_csv(mall_url)
+    print("Loaded Mall Customers dataset from GitHub successfully!")
+except Exception:
+    mall = pd.read_csv("Mall_Customers.csv")
+    print("Loaded Mall Customers dataset from local file.")
 
-print("First 10 rows:")
+print("\nFirst 10 rows:")
 print(mall.head(10))
 
 print("\nLast 10 rows:")
@@ -223,10 +230,17 @@ plt.close()
 print("Saved output_graphs/7_clustering_comparison.png")
 
 # --------------------------------------------------
-# Task 5: Groceries Market Basket Analysis
+# Task 5: Groceries Market Basket Analysis from GitHub
 # --------------------------------------------------
-groceries = pd.read_csv("Groceries_dataset.csv")
-print("\nGroceries dataset sample:")
+groceries_url = "https://raw.githubusercontent.com/ayankhan96686-create/ml-hand-on-lab-4/main/Groceries_dataset.csv"
+try:
+    groceries = pd.read_csv(groceries_url)
+    print("\nLoaded Groceries dataset from GitHub successfully!")
+except Exception:
+    groceries = pd.read_csv("Groceries_dataset.csv")
+    print("\nLoaded Groceries dataset from local file.")
+
+print("Groceries dataset sample:")
 print(groceries.head())
 
 # Group items by member and date into single transactions

@@ -63,14 +63,21 @@ This repository contains the complete implementation for **Hands-on Lab Evaluati
 pip install numpy pandas matplotlib seaborn scikit-learn mlxtend
 ```
 
-### 2. Run Python Script
+### 2. Loading Datasets via GitHub
+The code and notebook automatically load both datasets directly from your GitHub repository raw links:
+* `Mall_Customers.csv`: `https://raw.githubusercontent.com/ayankhan96686-create/ml-hand-on-lab-4/main/Mall_Customers.csv`
+* `Groceries_dataset.csv`: `https://raw.githubusercontent.com/ayankhan96686-create/ml-hand-on-lab-4/main/Groceries_dataset.csv`
+
+*(If running without internet, the code automatically falls back to local files).*
+
+### 3. Run Python Script
 ```bash
 python lab4_code.py
 ```
 
 All 7 visualization graphs will be saved into the `output_graphs/` folder, and the mined association rules will be exported to `association_rules_report.csv`.
 
-### 3. Or Open the Jupyter Notebook
+### 4. Or Open the Jupyter Notebook
 Open `lab4_clustering_association.ipynb` in Jupyter Notebook, VS Code, or Google Colab and run all cells sequentially.
 
 ---
